@@ -24,7 +24,7 @@ function Header(props) {
   return (
     <div className='header'>
       <h1>Hoteles</h1>
-      <h2>Desde {Availability(checkIn.valueOf())}, hasta {Availability(checkOut.valueOf())}</h2>
+      <h2>Desde {Availability(checkIn)}, hasta {Availability(checkOut)}</h2>
       <h2>En {country}</h2>
       <h2>{hotelPrice(price)}</h2>
       <h2>De {size}</h2>

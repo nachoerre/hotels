@@ -15,8 +15,8 @@ import Header from '../components/header/Header';
 function App() {
 
   const [hotels, setHotels] = useState(hotelsData);
-  const [checkIn, setCheckIn] = useState('Cualquier Fecha');
-  const [checkOut, setCheckOut] = useState('Cualquier Fecha');
+  const [checkIn, setCheckIn] = useState(null);
+  const [checkOut, setCheckOut] = useState(null);
   const [country, setCountry] = useState('Todos los Paises');
   const [price, setPrice] = useState('Cualquier Precio');
   const [size, setSize] = useState('Cualquier Tamaño');
@@ -38,7 +38,7 @@ function App() {
     if (
       (new Date(dateIn).setHours(0, 0, 0, 0).valueOf() >= hotel.availabilityFrom &&
         new Date(dateOut).setHours(0, 0, 0, 0).valueOf() <= hotel.availabilityTo) ||
-      (checkIn === 'Cualquier Fecha' && checkOut === 'Cualquier Fecha')
+      (checkIn === null && checkOut === null)
     ) {
       return true
     };
@@ -102,8 +102,8 @@ function App() {
 
   //when clicking on the "Limpiar" button you reset all the useStates.
   const handleClearSelects = () => {
-    setCheckIn('Cualquier Fecha');
-    setCheckOut('Cualquier Fecha');
+    setCheckIn(null);
+    setCheckOut(null);
     setCountry('Todos los Paises');
     setPrice('Cualquier Precio');
     setSize('Cualquier Tamaño');
@@ -114,7 +114,6 @@ function App() {
 
   return (
     <div className="app">
-      <header>
         <Header
           country={country}
           price={price}
@@ -122,7 +121,6 @@ function App() {
           checkIn={checkIn}
           checkOut={checkOut}
         />
-      </header>
       <div>
         <SelectMenu
           checkInDate={checkInDate}
@@ -141,9 +139,9 @@ function App() {
       <main>
         {/* the following is to let the users know that it is needed to select a check out date
         if a check in date is selected and check in date can't be bigger than check out date*/
-          checkIn !== 'Cualquier Fecha' && checkOut === 'Cualquier Fecha' ?
+          checkIn && !checkOut ?
             <div className='not-found-message'>Por favor elija una fecha de salida</div> :
-            checkIn === 'Cualquier Fecha' && checkOut !== 'Cualquier Fecha' ?
+            !checkIn && checkOut ?
               <div className='not-found-message'>Por favor elija una fecha de entrada</div> :
               checkIn > checkOut ?
                 <div className='not-found-message'>La fecha de salida no puede ser menor que la de entrada!</div> :
@@ -151,7 +149,7 @@ function App() {
                   <div className='not-found-message'>Lo sentimos, no hay hoteles que coincidan con su seleccion</div> :
                   hotels.map((item) => {
                     return (<Hotel
-                      key={item.id}
+                      key={Math.random()}
                       name={item.name}
                       photo={item.photo}
                       description={item.description}

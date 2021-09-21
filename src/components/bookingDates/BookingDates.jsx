@@ -10,7 +10,7 @@ function BookingDates(props) {
   };
 
   return (
-    <input className='mobile-size' type="Date" onChange={handleBookingDates} id={id} value={value}/>
+    <input className='mobile-size' type="Date" onChange={handleBookingDates} id={id} value={value || ''}/>
   )
 };
 

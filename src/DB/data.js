@@ -109,6 +109,7 @@ const hotelsData = [
     price: 2
   },
   {
+    id: 9,
     slug: 'casa-turquesa',
     name: 'Casa Turquesa',
     photo: require('./images/casa-turquesa.jpg'),
@@ -121,6 +122,7 @@ const hotelsData = [
     price: 3
   },
   {
+    id: 10,
     slug: 'vila-da-santa',
     name: 'Vila Da Santa',
     photo: require('./images/vila-da-santa.jpg'),
@@ -133,6 +135,7 @@ const hotelsData = [
     price: 3
   },
   {
+    id: 11,
     slug: 'uxua-casa',
     name: 'UXUA Casa Hotel & Spa',
     photo: require('./images/uxua-casa.jpg'),
@@ -145,6 +148,7 @@ const hotelsData = [
     price: 4
   },
   {
+    id: 12,
     slug: 'ponta-dos-ganchos',
     name: 'Ponta dos Ganchos',
     photo: require('./images/uxua-casa.jpg'),
@@ -157,6 +161,7 @@ const hotelsData = [
     price: 4
   },
   {
+    id: 13,
     slug: 'alto-atacama',
     name: 'Alto Atacama',
     photo: require('./images/alto-atacama.jpg'),
@@ -169,6 +174,7 @@ const hotelsData = [
     price: 4
   },
   {
+    id: 14,
     slug: 'tierra-patagonia',
     name: 'Tierra Patagonia',
     photo: require('./images/tierra-patagonia.jpg'),
@@ -181,6 +187,7 @@ const hotelsData = [
     price: 4
   },
   {
+    id: 15,
     slug: 'vira-vira',
     name: 'Vira Vira',
     photo: require('./images/vira-vira.jpg'),
@@ -193,6 +200,7 @@ const hotelsData = [
     price: 4
   },
   {
+    id: 16,
     slug: 'vik-chile',
     name: 'Vik Chile',
     photo: require('./images/vik-chile.jpg'),
@@ -205,6 +213,7 @@ const hotelsData = [
     price: 4
   },
   {
+    id: 17,
     slug: 'casa-higueras',
     name: 'Casa Higueras',
     photo: require('./images/casa-higueras.jpg'),
@@ -217,6 +226,7 @@ const hotelsData = [
     price: 4
   },
   {
+    id: 18,
     slug: 'campo-tinto',
     name: 'Campo Tinto',
     photo: require('./images/campo-tinto.jpg'),

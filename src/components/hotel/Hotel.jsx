@@ -12,17 +12,21 @@ import { faMapMarkerAlt, faBed, faDollarSign } from '@fortawesome/free-solid-svg
 function Hotel(props) {
   const { name, photo, description, availabilityFrom, availabilityTo, rooms, city, country, price } = props;
 
-  //cost function shows full dollar icons based on the hotel price.
-  const cost = (price) => {
-    const fullDollar = <FontAwesomeIcon className='icon dollar' icon={faDollarSign} />
-    const emptyDollar = <FontAwesomeIcon className='icon dollar' style={{ color: 'rgba(255, 255, 255, 0.1)' }} icon={faDollarSign} />
-    let totalDollar = [emptyDollar, emptyDollar, emptyDollar, emptyDollar];
-    //the next cicle will push full dollar icons in the array above and pop out empty dollar icons at the same time.
-    for (let i = 1; i <= price; i++) {
-      totalDollar.unshift(fullDollar);
-      totalDollar.pop()
+  const renderFullDollar = (id) => <FontAwesomeIcon key={id} className='icon dollar' icon={faDollarSign} />;
+  const renderEmptyDollar = (id) => <FontAwesomeIcon key={id} className='icon dollar' style={{ color: 'rgba(255, 255, 255, 0.1)' }} icon={faDollarSign} />;
+
+  //getCost function shows full dollar icons based on the hotel price.
+  const getCost = (price) => {
+    switch (price) {
+      case 1:
+        return [renderFullDollar('icon-0'), renderEmptyDollar('icon-1'), renderEmptyDollar('icon-2'), renderEmptyDollar('icon-3')];
+      case 2:
+        return [renderFullDollar('icon-0'), renderFullDollar('icon-1'), renderEmptyDollar('icon-2'), renderEmptyDollar('icon-3')];
+      case 3:
+        return [renderFullDollar('icon-0'), renderFullDollar('icon-1'), renderFullDollar('icon-2'), renderEmptyDollar('icon-3')];
+      default:
+        return [renderFullDollar('icon-0'), renderFullDollar('icon-1'), renderFullDollar('icon-2'), renderFullDollar('icon-3')];
     }
-    return totalDollar;
   };
 
   return (
@@ -44,13 +48,13 @@ function Hotel(props) {
         <div className='box'>
           <div className='container-2'>
             <div className='icon-box'>
-              <FontAwesomeIcon className='icon' icon={faBed}/>
+              <FontAwesomeIcon className='icon' icon={faBed} />
             </div>
             <div className='text-box'>
               {rooms} Habitaciones
             </div>
           </div>
-          <div className='container-2 price icon-box'>{cost(price)}</div>
+          <div className='container-2 price icon-box'>{getCost(price)}</div>
         </div>
         <button className='container-2 booking'>Reservar</button>
       </div>
