@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/hotels/static/css/main.10f1f1d1.chunk.css",
+    "main.js": "/hotels/static/js/main.0e067ea1.chunk.js",
+    "main.js.map": "/hotels/static/js/main.0e067ea1.chunk.js.map",
+    "runtime-main.js": "/hotels/static/js/runtime-main.6f7c169d.js",
+    "runtime-main.js.map": "/hotels/static/js/runtime-main.6f7c169d.js.map",
+    "static/js/2.4598af17.chunk.js": "/hotels/static/js/2.4598af17.chunk.js",
+    "static/js/2.4598af17.chunk.js.map": "/hotels/static/js/2.4598af17.chunk.js.map",
+    "index.html": "/hotels/index.html",
+    "static/css/main.10f1f1d1.chunk.css.map": "/hotels/static/css/main.10f1f1d1.chunk.css.map",
+    "static/js/2.4598af17.chunk.js.LICENSE.txt": "/hotels/static/js/2.4598af17.chunk.js.LICENSE.txt",
+    "static/media/alto-atacama.jpg": "/hotels/static/media/alto-atacama.a6846d24.jpg",
+    "static/media/azur-real.jpg": "/hotels/static/media/azur-real.9a591fc1.jpg",
+    "static/media/campo-tinto.jpg": "/hotels/static/media/campo-tinto.f27bca75.jpg",
+    "static/media/casa-higueras.jpg": "/hotels/static/media/casa-higueras.0c6c7433.jpg",
+    "static/media/casa-turquesa.jpg": "/hotels/static/media/casa-turquesa.8e9179ce.jpg",
+    "static/media/entre-cielos.jpg": "/hotels/static/media/entre-cielos.671c5a26.jpg",
+    "static/media/Header.css": "/hotels/static/media/hotel-background-2.ad3c109f.jpg",
+    "static/media/huacalera.jpg": "/hotels/static/media/huacalera.7542bc14.jpg",
+    "static/media/la-bamba-de-areco.jpg": "/hotels/static/media/la-bamba-de-areco.0ccacda0.jpg",
+    "static/media/luma-casa-de-montana.jpg": "/hotels/static/media/luma-casa-de-montana.0501710d.jpg",
+    "static/media/merced-del-alto.jpg": "/hotels/static/media/merced-del-alto.3daaee16.jpg",
+    "static/media/rincon-del-socorro.jpg": "/hotels/static/media/rincon-del-socorro.98161c62.jpg",
+    "static/media/sainte-jeanne.jpg": "/hotels/static/media/sainte-jeanne.4ff84aba.jpg",
+    "static/media/tierra-patagonia.jpg": "/hotels/static/media/tierra-patagonia.aad2b011.jpg",
+    "static/media/uxua-casa.jpg": "/hotels/static/media/uxua-casa.ebf46cc5.jpg",
+    "static/media/vik-chile.jpg": "/hotels/static/media/vik-chile.341113d7.jpg",
+    "static/media/vila-da-santa.jpg": "/hotels/static/media/vila-da-santa.a64e91d2.jpg",
+    "static/media/vira-vira.jpg": "/hotels/static/media/vira-vira.17468e7f.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6f7c169d.js",
+    "static/js/2.4598af17.chunk.js",
+    "static/css/main.10f1f1d1.chunk.css",
+    "static/js/main.0e067ea1.chunk.js"
+  ]
+}
